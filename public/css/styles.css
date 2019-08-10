@@ -58,3 +58,8 @@ button {
     color: white;
     padding: 8px;
 }
+
+.no-dec-link {
+    color: #888888;
+    text-decoration: none;
+}
