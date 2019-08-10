@@ -43,7 +43,7 @@ footer a {
 }
 
 .portrait {
-    width: 250px;
+    width: 300px;
 }
 
 input {
@@ -62,4 +62,13 @@ button {
 .no-dec-link {
     color: #888888;
     text-decoration: none;
+}
+
+.about-img-row {
+    display: flex;
+}
+
+.about-img-col {
+    flex: 50%;
+    padding: 5px;
 }
