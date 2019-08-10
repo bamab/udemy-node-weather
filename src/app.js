@@ -75,12 +75,12 @@ app.get('/weather', (req, res) => {
             return res.send({ error })
         }
         
-        forecast(latitude, longtitude, (error, { summary, temperature, precip }) => {
+        forecast(latitude, longtitude, (error, { summary, temperature, precip, high, low }) => {
             if (error) {
                 return res.send({ error })
             }
             
-            let forecast = summary + ' The current temperature is ' + temperature + ' degrees with ' + precip + '% chance of precipitation.'
+            let forecast = summary + ' The current temperature is ' + temperature + ' degrees with ' + precip + '% chance of precipitation. The high for today is ' + high + ' degrees with a low of ' + low + '.'
 
             res.send({
                 address,
